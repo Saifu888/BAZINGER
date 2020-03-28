@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+/* common css start */
+
+body{
+    font-family: "Open Sans",sans-serif; 
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+ul,li{
+    list-style-type:none;
+}
+.header_contant h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.header_contant p{
+    font-size: 16px;
+    line-height: 41px;
+}
+.section h5{
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 800;
+    color:#898d91;
+}
+.section p{
+    font-size: 11px;
+    line-height: 21px;
+}
+p{
+    color: #898989;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* comoncss end */
+
+/* header css start */
+
+#header{
+    background-color: #02918c;
+}
+.logo{
+    width: 25%;
+    padding: 16px 0 20px;
+}
+.menu{
+    width: 75%;
+}
+.menu ul{
+    float: right;
+}
+.menu ul li{
+    padding: 22px 25px;
+    font-size: 12px;
+    font-weight: 800 ;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.menu ul li a:hover{
+    background: #bbb;
+}
+
+/* header css end */
+
+/*banner css start*/
+
+#banner{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-color: rgba()
+}
+.banner_contant{
+    text-align: center;
+    color: #fff;
+    padding: 200px 0;
+}
+.banner_contant h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+.banner_contant h1{
+    font-size: 68px;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    font-weight: 800;
+}
+.banner_contant p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.banner_contant img{
+    padding: 47px 0 46px;
+}
+.banner_contant h6{
+    background: #cfc91d;
+    font-size: 14px;
+    width: 196px;
+    height: 47px;
+    padding: 16px 0 15px;
+    display: inline-block;
+    font-weight: 800;
+    text-transform: uppercase;
+    
+}
+/*banner css ends*/
+/*about css start*/
+#about .header_contant{
+    width: 877px;
+    margin: auto;
+    text-align: center;
+    padding: 88px 0 80px;
+}
+#about .header_contant img{
+    padding: 21px 0;
+}
+#about .header_contant p span{
+    font-weight: 800;
+    font-size: 23px;
+    color:#7e8287
+}
+.about_section{
+    padding-bottom: 95px;
+}
+.about_section img {
+    padding-bottom: 25px;
+}
+.about_section .section{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #bbb;
+    padding: 36px 63px 52px;
+}
+/*about css end*/
+/*section css start*/
+#service{
+    background-image: url(../images/banner-2.jpg);
+    background-position: right center;
+    background-size: cover;
+    
+}
+.service_contant{
+    width: 50%;
+}
+.service_contant .header_contant{
+    text-align: left;
+    padding: 60px 0 55px;
+}
+.service_contant .header_contant img{
+    padding: 35px 0 25px;
+}
+.service_contant .section{
+    width: 50%;
+    padding: 0 110px 45px 0;
+}
+.service_contant .section h5{
+    padding: 14px 0 15px;
+}
+/*section css end*/
+/*work css start*/
+#work .header_contant{
+    text-align: center;
+    width: 678px;
+    margin: auto;
+    padding: 93px 0 65px;
+}
+#work .header_contant img{
+    padding: 16px 0;
+}
+.item_contant{
+    width: 25%;
+    position: relative;
+}
+.item_contant img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item_contant .section{
+    position: absolute;
+    background: rgba(2,145,140,.85);
+    text-align: center;
+    padding: 55px 37px 50px;
+    top:20px;
+    bottom: 20px;
+    right: 28px;
+    left: 28px;
+    transform: scale(0);
+    transition: .5s;
+}
+.item_contant:hover .section{
+    transform: scale(1);
+    
+}
+.item_contant .section h5, .item_contant .section p{
+     color: #fff;
+}
+
+/*work css end*/
+/*contact css start*/
+#contact .header_contant{
+    text-align: center;
+    width: 678px;
+    margin: auto;
+    padding: 81px 0 60px;
+}
+#contact .header_contant img{
+    padding: 16px 0;
+}
+/*contact css end*/
+/*from css start*/
+#form_contant{
+    background: #0b0b0b;
+    padding-bottom: 70px;
+}
+#form_contant .form_element{
+    width: 640px;
+    margin: auto;
+    text-align: center;
+    padding: 48px 0 10px;
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    color: #7e8287;
+    font-size: 16px;
+    line-height: 41px;
+}
+#form_contant .container textarea{
+    width: 920px;
+    height: 100px;
+    font-family: "Open Sans",sans-serif;
+    resize: none;
+    padding-bottom: px;
+   
+}
+#form_contant button{
+  font-size: 14px;
+  color: #0b1016;
+  font-weight: 800;
+  background-color: #cfc91d;
+  border: none;
+  padding: 15px 60px;
+  display: block;
+  margin: 58px auto 0;
+
+}
+/*from css end*/
+/*footer css start*/
+.footer{
+    background: #000000; 
+}
+.footer p{
+    font-size: 12px;
+    color: #7e8287;
+    text-align: center;
+    padding: 32px 0 25px;
+}
+/*footer css end*/
