@@ -1,276 +1,420 @@
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
 }
 /* common css start */
-
 body{
-    font-family: "Open Sans",sans-serif; 
+    font-family: 'Lato', sans-serif;
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.row{
+    display: flex;
 }
 .container{
     width: 1170px;
     margin: auto;
 }
-a{
-    text-decoration: none;
-    display: block;
-    color: #fff;
+.heading{
+    text-align: center;
 }
-ul,li{
-    list-style-type:none;
+.heading h3{
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 37px;
 }
-.header_contant h2{
-    font-size: 46px;
-    font-weight: 800;
-    color: #02918c;
-    text-transform: uppercase;
+.contant h4{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase
 }
-.header_contant p{
-    font-size: 16px;
-    line-height: 41px;
+.heading p{
+    font-size: 20px;
+    font-weight: 300;
 }
-.section h5{
-    font-size: 16px;
-    line-height: 23px;
-    font-weight: 800;
-    color:#898d91;
-}
-.section p{
-    font-size: 11px;
-    line-height: 21px;
-}
-p{
-    color: #898989;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* comoncss end */
-
+/* common css end */
 /* header css start */
-
 #header{
-    background-color: #02918c;
+    background-color: #131e29;
+    border-bottom: 1px #4a687f solid;
 }
 .logo{
-    width: 25%;
-    padding: 16px 0 20px;
+    width: 20%;
+    padding: 13px 0 30px;
 }
 .menu{
-    width: 75%;
+    width: 80%;
 }
 .menu ul{
     float: right;
 }
 .menu ul li{
-    padding: 22px 25px;
-    font-size: 12px;
-    font-weight: 800 ;
     display: inline-block;
-    color: #fff;
+    font-size: 13px;
     text-transform: uppercase;
-    transition: 1s;
+    padding: 42px 17px;
+    float: right;
 }
-.menu ul li a:hover{
-    background: #bbb;
-}
-
 /* header css end */
-
 /*banner css start*/
-
-#banner{
-    background-image: url(../images/banner.jpg);
+#banner_1{
+    background: url(../images/banner_1.jpg);
     background-size: cover;
-    background-color: rgba()
+    background-position: center;
+    height: 700px;
+    border-bottom: 4px #4bcaff solid;
+    float: left right;
+    
 }
-.banner_contant{
-    text-align: center;
+#banner_1 .container{
+    position: relative;
     color: #fff;
-    padding: 200px 0;
 }
-.banner_contant h4{
-    font-size: 30px;
-    font-weight: 400;
+#banner_1 .banner_contant{
+    width: 675px;
+    margin-left: auto;
+    color: #fff;
+    position: absolute;
+    top: 224px;
+    bottom: 0;
+    left: 515px;
+    right: 0;
+    
 }
-.banner_contant h1{
-    font-size: 68px;
-    text-transform: uppercase;
-    letter-spacing: 30px;
-    font-weight: 800;
+.banner_contant h2{
+    font-size: 48px;
+    font-weight: 300;
+}
+.banner_contant h2 span{
+    font-weight: 700;
 }
 .banner_contant p{
     font-size: 18px;
-    font-weight: 400;
+    padding: 25px 0 40px;
+    font-weight: 300;
 }
-.banner_contant img{
-    padding: 47px 0 46px;
+.banner_contant .cont{
+    border: 3px #fff solid;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 17px 50px 33px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.banner_contant .more{
+    margin-left: 40px;
+    background: #4bcaff;
+    border: 4px #4bcaff outset;
 }
 .banner_contant h6{
-    background: #cfc91d;
-    font-size: 14px;
-    width: 196px;
-    height: 47px;
-    padding: 16px 0 15px;
-    display: inline-block;
-    font-weight: 800;
-    text-transform: uppercase;
-    
+    font-size: 18px;
+    padding: 60px 12px 127px 0;
+    font-weight:300;
 }
-/*banner css ends*/
-/*about css start*/
-#about .header_contant{
-    width: 877px;
-    margin: auto;
-    text-align: center;
-    padding: 88px 0 80px;
-}
-#about .header_contant img{
-    padding: 21px 0;
-}
-#about .header_contant p span{
-    font-weight: 800;
-    font-size: 23px;
-    color:#7e8287
-}
-.about_section{
-    padding-bottom: 95px;
-}
-.about_section img {
-    padding-bottom: 25px;
-}
-.about_section .section{
-    width: 25%;
-    text-align: center;
-    border-right: 1px solid #bbb;
-    padding: 36px 63px 52px;
-}
-/*about css end*/
-/*section css start*/
-#service{
-    background-image: url(../images/banner-2.jpg);
-    background-position: right center;
-    background-size: cover;
-    
-}
-.service_contant{
-    width: 50%;
-}
-.service_contant .header_contant{
-    text-align: left;
-    padding: 60px 0 55px;
-}
-.service_contant .header_contant img{
-    padding: 35px 0 25px;
-}
-.service_contant .section{
-    width: 50%;
-    padding: 0 110px 45px 0;
-}
-.service_contant .section h5{
-    padding: 14px 0 15px;
-}
-/*section css end*/
-/*work css start*/
-#work .header_contant{
-    text-align: center;
-    width: 678px;
-    margin: auto;
-    padding: 93px 0 65px;
-}
-#work .header_contant img{
-    padding: 16px 0;
-}
-.item_contant{
-    width: 25%;
-    position: relative;
-}
-.item_contant img{
-    width: 100%;
+.banner_contant a{
+    padding: 55px 8px 130px;
     height: 100%;
-    display: block;
 }
-.item_contant .section{
-    position: absolute;
-    background: rgba(2,145,140,.85);
+/*banner css end*/
+/*features css start*/
+#features{
+    border-bottom: 2px #e5e5e5 solid;
+}
+#features .contant{
     text-align: center;
-    padding: 55px 37px 50px;
-    top:20px;
-    bottom: 20px;
-    right: 28px;
-    left: 28px;
-    transform: scale(0);
-    transition: .5s;
-}
-.item_contant:hover .section{
-    transform: scale(1);
-    
-}
-.item_contant .section h5, .item_contant .section p{
-     color: #fff;
-}
-
-/*work css end*/
-/*contact css start*/
-#contact .header_contant{
-    text-align: center;
-    width: 678px;
-    margin: auto;
-    padding: 81px 0 60px;
-}
-#contact .header_contant img{
-    padding: 16px 0;
-}
-/*contact css end*/
-/*from css start*/
-#form_contant{
-    background: #0b0b0b;
-    padding-bottom: 70px;
-}
-#form_contant .form_element{
-    width: 640px;
-    margin: auto;
-    text-align: center;
-    padding: 48px 0 10px;
-    display: block;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #7e8287;
-    color: #7e8287;
-    font-size: 16px;
-    line-height: 41px;
-}
-#form_contant .container textarea{
-    width: 920px;
-    height: 100px;
-    font-family: "Open Sans",sans-serif;
-    resize: none;
-    padding-bottom: px;
+    padding: 63px 45px 77px;
    
 }
-#form_contant button{
-  font-size: 14px;
-  color: #0b1016;
-  font-weight: 800;
-  background-color: #cfc91d;
-  border: none;
-  padding: 15px 60px;
-  display: block;
-  margin: 58px auto 0;
+.contant i{
+    font-size: 70px;
+    padding: 50px;
+    border-radius: 50%;
+    color: #fff;
+    background: #4bcaff;
+    text-align: center;
+}
+#features .contant h4{;
+    color: #414042;
+    padding: 30px 0 25px;
+    display: block;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+#features .contant:hover h4{
+    color: #4bcaff;
+}
+.contant p{
+    font-size: 13px;
+    line-height: 23px;
+    color: #838383;
+}
+/*features css end*/
+/*gallery css start*/
+#gallery .contant{
+    text-align: center;
+    padding: 0 14px;
+}
+#gallery .contant .gallery_item{
+    height: 160px;
+    width: 270px;
+    margin-top: 53px;
+}
+#gallery .contant img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+#gallery .contant h4{
+    background: #447084;
+    padding: 11px 0;
+    border-radius: 0 0 5px 5px;
+}
+#gallery .contant p{
+    padding: 20px 35px 105px;
+}
+/*gallery css end*/
+/*banner_2 css start*/
 
+#banner_2{
+    
+    height: 550px;
+    background-image: url(../images/banner_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#banner_2 .container{
+    position: relative;
+    top: 60px;
+    bottom: 170px;
+    left: 220px;
+    right: 220px;
+    color: #fff;
+}
+#banner_2 .banner_contant{
+    width: 750px;
+    position: absolute;
+}
+#banner_2 .banner_contant p{
+    width: 625px;
+    margin-left: auto;
+}
+/*banner_2 css end*/
+/*price css start*/
+#price{
+   border: 1px #dbdbdb solid; 
+}
+#price .price_list{
+    border: 1px #dbdbdb solid;
+    margin: 80px 14px 90px;
+    text-align: center;
+    margin: auto;
+}
+.price_list h6{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 27.49 px;
+    letter-spacing: -30;
+    color: #d7d7d7;
+    text-transform: uppercase;
+    padding: 25px 0;
+}
+.price_list h5{
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 27.49 px;
+    letter-spacing: -50;
+    color: #fff;
+    padding: 25px 86px 30px;
+}
+.price_list p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #d7d7d7; 
+    padding: 20px 0;
+}
+.price_list button{
+    font-weight: 800;
+    font-size: 15px;
+    color: #fefefe;
+    padding: 18px 45px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+#price .item_1 h5{
+    background: #91c46b;
+}
+#price .item_1 button{
+    background: #91c46b;
+}
+#price .item_2{
+    margin: 55px 27px 65px;
+}
+#price .item_2 h6{
+    color: #4bcaff;
+    font-size: 22px;
+}
+#price .item_2 h5{
+    padding: 22px 122px;
+    background: #4bcaff;
+}
+#price .item_2 p{
+    color: #4bcaff;
+}
+#price .item_2 button{
+    margin-bottom: 22px;
+    background: #4bcaff;
+}
+#price .item_3 h5{
+    background: #fd7c00;
+}
+#price .item_3 button{
+    background: #fd7c00;
+}
+/*price css end*/
+/*Testimonials css start*/
+.Testimonials_contant{
+    width: 520px;
+    margin: auto; 
+    padding: 40px 0 105px;
+}
+.Testimonials_contant img{
+    padding-right: 23px;
+}
+.Testimonials_contant p{
+    font-size: 14px;
+    color: #4bcaff;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 35px 0;
+}
+.Testimonials_contant p span{
+    font-weight: 700;
+    display: block;
+    text-align: right;
+}
+/*Testimonials css end*/
+/*download css start*/
+#download{
+    background: #414042;
+}
+.download_contant{
+    margin: auto;
+    text-align: center;
+    padding: 25px 0 21px;
+    
+}
+.download_contant h2{
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 25px; 
+}
+.download_contant a{
+    font-size: 15px;
+    font-weight: 700;
+    color: #414042;
+    padding: 24px 47px 24px 30px;
+    text-transform: uppercase;
+    background: #4bcaff;
+    display: inline-block;
+    border-radius: 10px;
+    border: 4px #4bcaff outset;
+    
+}
+/*download css end*/
+/*from css start*/
+#form{
+    position: relative;
+    height: 680px;
+
+}
+#form iframe{
+    width: 100%;
+    height: 680px;
+}
+#form .form_contant{
+    background: rgba(75, 202, 255,.6); 
+    text-align: center;
+    margin: auto;
+    padding: 19px 27px 12px;
+    border: 1px #9acab5 solid;
+    width: 324px;
+    border-radius: 5px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
+    top: 340px;
+
+}
+#form .form_contant h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 18px;    
+}
+#form .form_contant .form_element{
+    border: none;
+    display: block;
+    margin: 0 auto 15px;
+    width: 270px;
+    height: 35px;
+    border-radius: 5px;
+    color: #000;
+}
+.form_contant input, .form_contant textarea{
+    font-size: 14px;
+    color: #d3d3d3;
+    text-align: center;
+}
+#form .form_contant .message{
+    height: 145px;
+    resize: none;
+    border: none;
+    display: block;
+    margin: 0 auto 20px;
+    width: 270px;
+    border-radius: 5px;
+}
+#form .form_contant .submit{
+    font-size: 15px;
+    font-weight: 700;
+    color: #72b3cc;
+    padding: 15px 75px;
+    background: #414042;
+    border-radius: 5px;
+    border:2px #414042 outset;
 }
 /*from css end*/
 /*footer css start*/
-.footer{
-    background: #000000; 
+#footer{
+    background: #414042;
+    color: #919191;
 }
-.footer p{
+#footer .footer_contant_1{
     font-size: 12px;
-    color: #7e8287;
-    text-align: center;
-    padding: 32px 0 25px;
+    width: 50%;
+    padding: 50px 0;
+}
+#footer .footer_contant_2{
+    font-size: 12px;
+    width: 50%;
+    padding: 50px 0;
+}
+#footer .footer_contant_2 P{
+    float: right;
 }
 /*footer css end*/
